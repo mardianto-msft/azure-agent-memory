@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+azure-identity
+azure-ai-projects
+httpx
+openai
+pydantic

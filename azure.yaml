@@ -1,0 +1,47 @@
+name: agent-memory
+metadata:
+  template: agent-memory-demo
+
+infra:
+  provider: bicep
+  path: infra
+
+services:
+  web:
+    project: src/web
+    language: js
+    host: containerapp
+    docker:
+      path: ./Dockerfile
+  mcp-memory:
+    project: src/mcp-memory
+    language: py
+    host: containerapp
+    docker:
+      path: ./Dockerfile
+  mcp-search:
+    project: src/mcp-search
+    language: py
+    host: containerapp
+    docker:
+      path: ./Dockerfile
+  backend:
+    project: src/backend
+    language: py
+    host: containerapp
+    docker:
+      path: ./Dockerfile
+
+hooks:
+  preprovision:
+    shell: sh
+    run: |
+      bash ./hooks/preprovision.sh
+    continueOnError: false
+
+  postdeploy:
+    shell: sh
+    run: |
+      bash ./hooks/postprovision.sh
+    interactive: true
+    continueOnError: false

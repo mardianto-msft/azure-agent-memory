@@ -1,0 +1,48 @@
+# Secrets & environment
+.env
+.env.*
+
+# Certificates & keys
+*.pem
+*.key
+*.cert
+*.pfx
+*.p12
+
+# Azure Developer CLI
+.azure/
+
+# Generated ARM template (compiled from Bicep)
+infra/main.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.memory/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Node / Frontend
+node_modules/
+dist/
+*.tsbuildinfo
+*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*

@@ -1,0 +1,15 @@
+# Knowledge Base URLs
+# One URL per line. Blank lines and lines starting with # are ignored.
+
+# Outlook rules
+https://support.microsoft.com/en-us/office/manage-email-messages-by-using-rules-in-outlook-c24f5dea-9465-4df4-ad17-a50704d66c59
+https://support.microsoft.com/en-us/office/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746
+
+# Out-of-office / automatic replies
+https://support.microsoft.com/en-us/office/how-to-set-up-out-of-office-automatic-replies-in-outlook-9742f476-5348-4f9f-997f-5e208513bd67
+
+# Email recall
+https://support.microsoft.com/en-us/office/how-to-recall-an-email-in-outlook-requirements-limitations-steps-35027f88-d655-4554-b4f8-6c0729a723a0
+
+# Email phishing
+https://support.microsoft.com/en-us/office/phishing-and-suspicious-behavior-in-outlook-0d882ea5-eedc-4bed-aebc-079ffa1105a3

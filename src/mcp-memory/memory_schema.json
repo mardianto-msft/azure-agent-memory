@@ -1,0 +1,44 @@
+{
+  "name": "memory_entry",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "required": ["user_id", "category", "content", "tags", "source_conversation_id"],
+    "additionalProperties": false,
+    "properties": {
+      "user_id": {
+        "type": "string",
+        "description": "The unique identifier of the user this memory belongs to."
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "identity",
+          "preference",
+          "knowledge",
+          "goal",
+          "context",
+          "relationship",
+          "episode",
+          "sentiment"
+        ],
+        "description": "The type of memory. identity: who the user is (name, role, location). preference: likes, dislikes, style choices. knowledge: facts, expertise, domain knowledge. goal: objectives, plans, aspirations. context: situational details (current project, tools in use). relationship: connections to people, teams, organizations. episode: summary of a notable past interaction. sentiment: expressed feelings or attitudes about topics."
+      },
+      "content": {
+        "type": "string",
+        "description": "A concise natural-language statement capturing the memory. Write in third person about the user. Each entry should be a single atomic fact or observation."
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Lowercase keywords for filtering and grouping. Use stable, reusable terms (e.g. 'python', 'food', 'work', 'family')."
+      },
+      "source_conversation_id": {
+        "type": "string",
+        "description": "The identifier of the conversation from which this memory was extracted."
+      }
+    }
+  }
+}
